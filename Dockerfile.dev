@@ -1,0 +1,11 @@
+FROM node:alpine AS builder
+
+WORKDIR app/
+
+COPY ./package.json
+
+RUN npm install
+
+COPY . .
+
+CMD ["/bin/bash", "-c" , "echo npm run test; echo npm run start"];
