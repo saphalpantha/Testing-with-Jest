@@ -39,6 +39,6 @@ jobs:
 
         - name: push image to docker Hub
           run: |
-            docker push saphalpantha/serve-node:latest
+            docker push saphalpantha/react-utest:latest
             
 ##COMPLETED
