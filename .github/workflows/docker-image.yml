@@ -13,13 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Install Dependency
         uses: bahmutov/npm-install@v1
       
       - name: Testing the suite
-
         run: npm run test
 
   publish_images:
