@@ -19,7 +19,7 @@ jobs:
         uses: bahmutov/npm-install@v1
       
       - name: Testing the suite
-        run: npm run test
+        run: npm run test:unit
 
   publish_images:
     
